@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Log.d("<===", "Klickat");
                 Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                intent.putExtra("name", "nextPage");
                 startActivity(intent);
             }
         });
