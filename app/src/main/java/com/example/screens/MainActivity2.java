@@ -9,6 +9,9 @@ public class MainActivity2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            String name = extras.getString("name");
+        }
     }
 }
